@@ -14,7 +14,7 @@ const allowedOrigins = (process.env.CLIENT_ORIGIN || '')
   .split(',')
   .map((origin) => origin.trim())
   .filter(Boolean)
-  .concat(['http://localhost:5173', 'https://formupfrontend.vercel.app']);
+  .concat(['http://localhost:5173', 'https://formupfrontend.vercel.app','https://www.formup.website']);
 
 app.use(
   cors({
